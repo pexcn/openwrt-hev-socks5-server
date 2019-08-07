@@ -1,5 +1,6 @@
 HevSocks5Server for OpenWrt
 ---
+[![Build Status][BUILD_STATUS]][RELEASE_FEEDS]
 
 ## 简介
 
@@ -45,3 +46,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 [UPSTREAM_PROJECT]: https://github.com/heiher/hev-socks5-server
 [OPENWRT_SDK]: https://openwrt.org/docs/guide-developer/obtain.firmware.sdk
+[BUILD_STATUS]: https://travis-ci.org/openwrt-dev/feeds.svg?branch=master
+[RELEASE_FEEDS]: https://github.com/openwrt-dev/feeds
