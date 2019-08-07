@@ -36,6 +36,8 @@ define Package/hev-socks5-server/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/bin/hev-socks5-server $(1)/usr/bin
 	$(INSTALL_DIR) $(1)/etc
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/conf/main.ini $(1)/etc/hev-socks5-server.ini
+	$(INSTALL_DIR) $(1)/etc/init.d
+	$(INSTALL_BIN) files/hev-socks5-server.init $(1)/etc/init.d/hev-socks5-server
 endef
 
 $(eval $(call BuildPackage,hev-socks5-server))
