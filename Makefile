@@ -34,6 +34,8 @@ MAKE_FLAGS += \
 define Package/hev-socks5-server/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/bin/hev-socks5-server $(1)/usr/bin
+	$(INSTALL_DIR) $(1)/etc
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/conf/main.ini $(1)/etc/hev-socks5-server.ini
 endef
 
 $(eval $(call BuildPackage,hev-socks5-server))
