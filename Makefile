@@ -3,6 +3,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=hev-socks5-server
 PKG_VERSION:=1.8.8
 PKG_RELEASE:=1
+PKG_USE_MIPS16:=0
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/heiher/hev-socks5-server.git
