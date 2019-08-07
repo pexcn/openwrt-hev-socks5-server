@@ -28,6 +28,9 @@ define Package/hev-socks5-server/description
 A simple, lightweight socks5 server for Unix.
 endef
 
+MAKE_FLAGS += \
+	ENABLE_STATIC=1
+
 define Package/hev-socks5-server/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/bin/hev-socks5-server $(1)/usr/bin
