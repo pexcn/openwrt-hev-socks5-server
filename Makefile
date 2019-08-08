@@ -31,8 +31,6 @@ define Package/hev-socks5-server/description
 A simple, lightweight socks5 server for Unix.
 endef
 
-MAKE_FLAGS += \
-	ENABLE_STATIC=1
 
 define Package/hev-socks5-server/conffiles
 /etc/hev-socks5-server.ini
