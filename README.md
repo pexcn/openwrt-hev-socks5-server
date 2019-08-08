@@ -22,7 +22,7 @@ HevSocks5Server for OpenWrt
     make menuconfig
     
     # 开始编译
-    make package/hev-socks5-server/compile V=s
+    make package/hev-socks5-server/{clean,compile} V=s
     ```
 
 ## 许可证
