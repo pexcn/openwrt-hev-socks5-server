@@ -20,7 +20,7 @@ start_hev_socks5_server() {
 		procd_append_param limits core="unlimited"
 	}
 	procd_set_param command /usr/bin/hev-socks5-server
-	procd_append_param command /etc/hev-socks5-server.ini
+	procd_append_param command /etc/hev-socks5-server.yml
 	procd_close_instance
 }
 
