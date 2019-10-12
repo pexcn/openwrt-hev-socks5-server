@@ -16,9 +16,6 @@ start_hev_socks5_server() {
 	procd_set_param stderr 1
 	procd_set_param nice -5
 	procd_set_param limits nofile="65535 65535"
-	[ -e /proc/sys/kernel/core_pattern ] && {
-		procd_append_param limits core="unlimited"
-	}
 	procd_set_param command /usr/bin/hev-socks5-server
 	procd_append_param command /etc/hev-socks5-server.yml
 	procd_close_instance
