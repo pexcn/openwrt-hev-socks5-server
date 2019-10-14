@@ -11,9 +11,6 @@ START=90
 USE_PROCD=1
 #PROCD_DEBUG=1
 
-EXEC="/usr/bin/hev-socks5-server"
-CONF="/etc/hev-socks5-server.yml"
-
 start_hev_socks5_server() {
 	local enable
 	config_get_bool enable $1 enable
@@ -24,8 +21,8 @@ start_hev_socks5_server() {
 	procd_set_param stderr 1
 	procd_set_param nice -5
 	procd_set_param limits nofile="65535 65535"
-	procd_set_param command $EXEC
-	procd_append_param command $CONF
+	procd_set_param command /usr/bin/hev-socks5-server
+	procd_append_param command /etc/hev-socks5-server.yml
 	procd_close_instance
 }
 
