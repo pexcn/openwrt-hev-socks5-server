@@ -4,7 +4,7 @@ main:
   # Listen port
   port: 1080
   # Listen address (ipv4|ipv6)
-  listen-address: 0.0.0.0
+  listen-address: '::'
   # DNS server address (ipv4|ipv6)
   dns-address: 192.168.1.1
   # Resolve domain to IPv6 address first
