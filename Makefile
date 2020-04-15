@@ -36,6 +36,8 @@ define Package/hev-socks5-server/conffiles
 /etc/hev-socks5-server.yml
 endef
 
+TARGET_CFLAGS += -O3
+
 MAKE_FLAGS += \
 	ENABLE_STATIC=1
 
