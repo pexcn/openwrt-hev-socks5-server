@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hev-socks5-server
 PKG_VERSION:=1.9.4
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/heiher/hev-socks5-server.git
@@ -38,8 +38,7 @@ endef
 
 TARGET_CFLAGS += -O3
 
-MAKE_FLAGS += \
-	ENABLE_STATIC=1
+MAKE_FLAGS += ENABLE_STATIC=1
 
 define Package/hev-socks5-server/install
 	$(INSTALL_DIR) $(1)/usr/bin
